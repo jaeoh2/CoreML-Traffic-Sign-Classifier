@@ -6,6 +6,25 @@ This is the German traffic sign classifier project for implementing CoreML. Sque
 * https://github.com/rcmalli/keras-squeezenet
 * https://arxiv.org/pdf/1602.07360.pdf
 
+## Train
+- batch size : 256
+- epochs : 1000 (Earlystopping callbacks)
+- Data Generator :
+```python
+train_datagen = ImageDataGenerator(
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=20,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    horizontal_flip=False)
+```
+
+## Result
+* Train loss: 0.0492
+* Train accuracy : 0.9866
+* Test accuracy : 0.7552
+
 ## Model
 ```
 ____________________________________________________________________________________________________
