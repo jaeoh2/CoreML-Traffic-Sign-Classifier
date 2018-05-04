@@ -6,6 +6,9 @@ This is the German traffic sign classifier project for implementing CoreML. Sque
 * https://github.com/rcmalli/keras-squeezenet
 * https://arxiv.org/pdf/1602.07360.pdf
 
+## Dataset
+http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset#Downloads
+
 ## Train
 - batch size : 256
 - epochs : 1000 (Earlystopping callbacks)
